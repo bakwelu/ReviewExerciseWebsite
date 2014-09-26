@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Review Sample - Basic Javascript</title>
+<meta name="keywords" content="Client Side Web Design" />
+<meta name="description" content="client side web design review class" />
+<link href="extreview.css" rel="stylesheet" />
+ <!-- JAVASCRIPT to clear search text when the field is clicked -->
+        <script type="text/javascript">
+        window.onload = function(){
+            //Get submit button
+            var submitbutton = document.getElementById("submitbutton");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Search our website'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+        <script type="text/javascript">
+<!--
+function DisplayYearDay()
+{
+   var DayNumber = "370";
+   while (DayNumber < 1 || DayNumber > 365)
+   {
+      DayNumber = Number.NaN
+      alert("Invalid day:Day is between 1 and 365.")
+   } 
+     alert("Today is the : " + DayNumber + "of the year" );
+   
+ 
+}
+function DayOfWeek() {
+    var WeekDay;
+    switch (new Date().getDay()) {
+        case 0:
+        
+            WeekDay = "Sunday";
+            if (DayOfWeek==="Sunday") println("Happy");
+
+            break;
+        case 1:
+            weekDay = "Monday";
+            break;
+        case 2:
+            WeekDay = "Tuesday";
+            break;
+        case 3:
+            WeekDay = "Wednesday";
+            break;
+        case 4:
+            WeekDay = "Thursday";
+            break;
+        case 5:
+            WeekDay = "Friday";
+            break;
+        case  6:
+            WeekDay = "Saturday";
+            break;
+			default:
+    }
+    
+    
+    document.getElementById("returnDay").innerHTML = "Happy " + WeekDay + "!";
+}
+//-->
+</script>
+</head>
+
+<body >
+
+<section id="t_wrapper">
+	<section id="t_header">
+        
+        <div id="search_box">
+            <section id="bbsearch">
+                <form id="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" class="searchtextinput" name="q" size="21" maxlength="120">
+                    <input type="submit" value="search" class="searchbutton">
+                </form>
+            <div class="tfclear"></div>
+            </section>
+        </div>
+        
+        <div class="cleaner"></div>
+    </section>
+    
+    <nav>
+        <ul>
+            <li><a href="basicHtml.html"> Basic HTML</a></li>
+			<li><a href="html5.html"> HTML5</a></li>
+			<li><a href="basicJavascript.html"> Basic Javascript</a></li>
+			<li><a href="jQuery.html"> jQuery</a></li>
+        </ul>    	
+        <div class="cleaner"></div>
+    </nav> <!-- end of nav -->
+    
+    
+    	<h2>Review Exercises</h2>
+        <p>Insert text </p>
+  
+        
+    <section id="t_main">
+
+        <div class="col_w900">   
+         	<div class="post_box">
+                    <h1>Basic Javascript</h1>
+                    <article>
+                      <h1>Client Side Web Design Assignment</h1>
+  <p>This is an assignment to be submitted before next class.</p>
+</article>
+<form>
+<input type="button" value="Click Me" onclick="DisplayYearDay()" />
+</form>
+<p>Click on the button below to display the day of the week</p>
+<button onclick="DayOfWeek()">Click Me</button>
+
+<p id="returnDay"></p>
+
+<p id="aPointer">Click on button and mouse over this text to see the different cursors.</p>
+<button type="button" onclick="PointerOne()">Change cursor</button>
+<p id="bPointer">Click on button and mouse over this text to see the different cursors.</p>
+<button type="button" onclick="PointerTwo()">Change cursor</button>
+<p id="cPointer">Click on button and mouse over this text to see the different cursors.</p>
+<button type="button" onclick="PointerThree()">Change cursor</button>
+
+
+<script>
+function PointerOne()
+{
+document.getElementById("aPointer").style.cursor="pointer";
+}
+function PointerTwo()
+{
+document.getElementById("bPointer").style.cursor="progress";
+}
+function PointerThree()
+{
+document.getElementById("cPointer").style.cursor="help";
+}
+</script>
+
+
+<p>Javascript for reading xml file</p>
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","loyola.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+document.write("<table border='1'>");
+var x=xmlDoc.getElementsByTagName("STUDENT");
+for (i=0;i<x.length;i++)
+  {
+  document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+</script>   
+                    <a href="#">Read More</a>
+                    <div class="cleaner"></div>
+                </div>  <!-- end div post_box-->  	  
+                  
+            <div class="cleaner"></div>
+		</div> <!-- end of col_w900 -->
+        
+        <div class="cleaner"></div>
+    </section> <!-- end of main -->
+        
+</section> <!-- end of wrapper -->
+
+<section id="t_footer_wrapper">
+	<footer id="t_footer">
+    	
+        Copyright © 2014 <a href="#">Loyola University Chicago</a> - 
+        <a href="#" target="_self">Comp 424</a> by <a href="#" target="_self">Client Side Web Development</a>
+    
+    </footer> <!-- end of footer wrapper -->
+</section> <!-- end of footer -->
+
+</body> <!--end of body-->
+</html> <!--end of html-->

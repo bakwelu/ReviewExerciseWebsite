@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Review Sample - HTML 5</title>
+<meta name="keywords" content="Client Side Web Design" />
+<meta name="description" content="client side web design review class" />
+<link href="extreview.css" rel="stylesheet" />
+ <!-- JAVASCRIPT to clear search text when the field is clicked -->
+        <script type="text/javascript">
+        window.onload = function(){
+            //Get submit button
+            var submitbutton = document.getElementById("submitbutton");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Search our website'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+</head>
+
+<body >
+
+<section id="t_wrapper">
+	<section id="t_header">
+        
+        <div id="search_box">
+            <section id="bbsearch">
+                <form id="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" class="searchtextinput" name="q" size="21" maxlength="120">
+                    <input type="submit" value="search" class="searchbutton">
+                </form>
+            <div class="tfclear"></div>
+            </section>
+        </div>
+        
+        <div class="cleaner"></div>
+    </section>
+    
+    <nav>
+        <ul>
+            <li><a href="basicHtml.html"> Basic HTML</a></li>
+			<li><a href="html5.html"> HTML5</a></li>
+			<li><a href="basicJavascript.html"> Basic Javascript</a></li>
+			<li><a href="jQuery.html"> jQuery</a></li>
+        </ul>    	
+        <div class="cleaner"></div>
+    </nav> <!-- end of nav -->
+    
+    
+    	<h2>Review Exercises</h2>
+        <p>Insert text </p>
+  
+        
+    <section id="t_main">
+
+        <div class="col_w900">   
+         	<div class="post_box">
+                    <h1>Html 5</h1>
+                    <article>
+                      <h1>Client Side Web Design Assignment</h1>
+  <p>This is an assignment to be submitted before next class.</p>
+</article>
+<article id="HowToUse"> 
+                <p> Go to the search box and type in whatever you are looking for and then press <kbd> ENTER </kbd>. You will then find all price listings at different stores. If your item is not available it will return with:<br><br> <samp>Sorry this is not available please try searching another item </samp></p>
+              </article>
+
+            <aside>
+                <h4>User Reviews</h4>
+                <p>"Love this website! I always check here before buying anything in store."</p>
+                <p> "-Anonymous User"
+            </aside>
+
+            <figure> 
+            <img src="images/young-calico-cat_rz.jpg" alt="Kitty" width="348" height="189" class="center"/>
+                <figcaption>This kitty loves Bargain Bag! We hope you do too!.</figcaption>
+                </figure>
+            <article id="code">
+            <p> Here is an example of the code we are using on this website. This is some of the code used for the search box </p>
+            <pre>
+                <code>
+                if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Search our website'){
+                        submitbutton.value = '';
+                    }
+                });
+            </code>
+            </pre>
+        </article>
+
+            <nav>
+                <ul>
+                    <li><canvas id="myCanvas"></canvas></li>
+                    <li><video width="320" height="240" controls>
+                          <source type="video/mp4" src="http://static.videezy.com/system/resources/previews/000/001/685/original/Tablet-01.mp4">
+                          <source type="application/ogg" src="http://static.videezy.com/system/resources/preview2s/000/001/685/original/Tablet-01.ogv">
+                          Your browser does not support the video tag.
+                        </video></li>
+                    <li><audio controls>
+                        <source src="http://upload.wikimedia.org/wikipedia/commons/5/55/United_States_Navy_Band_-_%C2%A1Oh%2C_gloria_inmarcesible%21.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                        </audio></li>
+                </ul>
+            </nav>
+
+
+            
+                    <a href="#">Read More</a>
+                    <div class="cleaner"></div>
+                </div>  <!-- end div post_box-->  	  
+                  
+            <div class="cleaner"></div>
+		</div> <!-- end of col_w900 -->
+        
+        <div class="cleaner"></div>
+    </section> <!-- end of main -->
+        
+</section> <!-- end of wrapper -->
+
+<section id="t_footer_wrapper">
+	<footer id="t_footer">
+    	
+        Copyright © 2014 <a href="#">Loyola University Chicago</a> - 
+        <a href="#" target="_self">Comp 424</a> by <a href="#" target="_self">Client Side Web Development</a>
+    
+    </footer> <!-- end of footer wrapper -->
+</section> <!-- end of footer -->
+
+</body> <!--end of body-->
+</html> <!--end of html-->

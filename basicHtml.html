@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Review Sample - Basic HTML</title>
+<meta name="keywords" content="Client Side Web Design" />
+<meta name="description" content="client side web design review class" />
+<link href="extreview.css" rel="stylesheet" />
+ <!-- JAVASCRIPT to clear search text when the field is clicked -->
+        <script type="text/javascript">
+        window.onload = function(){
+            //Get submit button
+            var submitbutton = document.getElementById("submitbutton");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Search our website'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+</head>
+
+<body >
+
+<section id="t_wrapper">
+	<section id="t_header">
+        
+        <div id="search_box">
+            <section id="bbsearch">
+                <form id="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" class="searchtextinput" name="q" size="21" maxlength="120">
+                    <input type="submit" value="search" class="searchbutton">
+                </form>
+            <div class="tfclear"></div>
+            </section>
+        </div>
+        
+        <div class="cleaner"></div>
+    </section>
+    
+    <nav>
+        <ul>
+            <li><a href="basicHtml.html"> Basic HTML</a></li>
+			<li><a href="html5.html"> HTML5</a></li>
+			<li><a href="basicJavascript.html"> Basic Javascript</a></li>
+			<li><a href="jQuery.html"> jQuery</a></li>
+        </ul>    	
+        <div class="cleaner"></div>
+    </nav> <!-- end of nav -->
+    
+    
+    	<h2>Review Exercises</h2>
+        <p>Insert text </p>
+  
+        
+    <section id="t_main">
+
+        <div class="col_w900">   
+         	<div class="post_box">
+                    <h1>Basic Html </h1>
+                    <article>
+                      <h1>Client Side Web Design Assignment</h1>
+  <p class="pos_fixed">This is an assignment to be submitted before next class.</p>
+  
+  <h2 class="pos_left">This moves the header relative to normal position</h2>
+</article>
+<aside>
+<h4>USA</h4>
+<p>USA stands for United States of America.</p>
+</aside>
+</div>
+<div id="form">
+<form>
+<strong>Enter Your Details:</strong><br/>
+First name: <input type="text" name="firstname">
+<br>
+Last name: <input type="text" name="lastname">
+<br/>
+<input type="checkbox" name="student" value="graduate">Graduate<br>
+<input type="checkbox" name="student" value="undergaduate">Undergrauate 
+<br/>
+Level:
+<input type="range" name="level" min="0" max="10">
+<br/>
+Birthday:
+ <input type="date" name="bday">
+ <br/>
+ <input type="button" value="Submit">
+</form>
+</div>
+<br/>
+<div align="center">
+<table style:"width=100%">
+<tr>
+<th colspan="2">First Name</th>
+<th>Status</th>
+<th>Level</th>
+<th>Date of Birth</th>
+</tr>
+<tr>
+<td>Jack</td>
+<td>Jones</td>
+<td>Graduate</td>
+<td>8</th>
+<td>12/12/1990</td>
+</tr>
+<tr>
+<td>Rock</td>
+<td>Mark</td>
+<td>Undergraduate</td>
+<td>5</td>
+<td>01/01/1989</td>
+</tr>
+</table>
+</div> 
+<div>
+<pre>
+The Assignment is Submitted by:
+Julius Almeida
+Hiba
+Britany
+Robert
+Itua
+</pre>
+<p>This is Assignment: <del>3(Three)</del> <ins>2(Two)</ins>.</p>
+<code>System.out.println("Thank You");(Code Tag)</code><br>
+<var>Variable Tag</var><br>
+<samp>Sample Tag output looks like this.</samp><br>
+<kbd>Keyboard Tag looks like this. </kbd><br>
+<em>This is an "&lt;em&gt; Tag</em><br>
+</div>
+<div align="center">
+<figure>
+  <img src="images/LoyolaVisitCampus.jpg" alt="This is an Image" width="540" height="360">
+  <figcaption>Fig.1 - A caption for image.</figcaption>
+</figure>
+
+</div>
+    <h6> Thank You (Absolute positioning)!!!</h6>        
+                    <a href="#">Read More</a>
+                    <div class="cleaner"></div>
+                </div>    	  
+                  
+            <div class="cleaner"></div>
+		</div>
+        
+        <div class="cleaner"></div>
+    </section> <!-- end of main -->
+        
+</section> <!-- end of wrapper -->
+
+<section id="t_footer_wrapper">
+	<footer id="t_footer">
+    	
+        Copyright © 2014 <a href="#">Loyola University Chicago</a> - 
+        <a href="#" target="_self">Comp 424</a> by <a href="#" target="_self">Client Side Web Development</a>
+    
+    </footer> <!-- end of footer wrapper -->
+</section> <!-- end of footer -->
+
+</body> <!--end of body-->
+</html> <!--end of html-->

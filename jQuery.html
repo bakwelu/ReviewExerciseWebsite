@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Review Sample - jQuery</title>
+<meta name="keywords" content="Client Side Web Design" />
+<meta name="description" content="client side web design review class" />
+<link href="extreview.css" rel="stylesheet" />
+ <!-- JAVASCRIPT to clear search text when the field is clicked -->
+       
+		
+		<script type="text/javascript">
+        window.onload = function(){
+            //Get submit button
+            var submitbutton = document.getElementById("submitbutton");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'Search our website'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h2").remove();
+  });
+  $( "p" ).addClass( "addclass" );
+});
+$(document).ready(function(){
+$("#btn2").click(function(){
+    $("#add").append("<br><b>Client Side Web Designing");
+  });
+});
+$(document).ready(function(){
+  $("#change").click(function(){
+    $("strong").html("Hello <b>world!</b>");
+  });
+});
+
+$(document).ready(function() {
+var result = $('#jquery').parent();
+console.log(result);
+
+//parents()
+result = $('#jquery').parents('.col_w900');
+console.log(result);
+});
+
+</script>
+</head>
+
+<body >
+
+<section id="t_wrapper">
+	<section id="t_header">
+        <div id="search_box">
+            <section id="bbsearch">
+                <form id="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" class="searchtextinput" name="q" size="21" maxlength="120">
+                    <input type="submit" value="search" class="searchbutton">
+                </form>
+            <div class="tfclear"></div>
+            </section>
+        </div>
+        
+        <div class="cleaner"></div>
+    </section>
+    
+    <nav>
+        <ul>
+            <li><a href="basicHtml.html"> Basic HTML</a></li>
+			<li><a href="html5.html"> HTML5</a></li>
+			<li><a href="basicJavascript.html"> Basic Javascript</a></li>
+			<li><a href="jQuery.html"> jQuery</a></li>
+        </ul>    	
+        <div class="cleaner"></div>
+    </nav> <!-- end of nav -->
+    
+    
+    	<h2>Review Exercises</h2>
+        <p>Insert text </p>
+  
+        
+    <section id="t_main">
+
+        <div class="col_w900">   
+         	<div class="post_box">
+                    <h1>jQuery</h1>
+                    <article>
+                      <h1>This are all jQuery Commands</h1>
+<div id="jquery" align="center">
+<h2>Click on the Button to Remove Me</h2>
+<button>Remove Element</button>
+
+<p>Hello World</p>
+<button id="btn2">Add Element</button>
+<div id="add" aligh="center"></div>
+<div align="center">
+<button id="change">Click to change data</button><br>
+<strong> Magic</strong>
+</div>
+</article>
+
+
+
+            
+                    <a href="#">Read More</a>
+                    <div class="cleaner"></div>
+                </div>  <!-- end div post_box-->  	  
+                  
+            <div class="cleaner"></div>
+            
+            <p> The code below is for traversing DOM elements using .parent(). To view go to firebug console</p>
+                <code>
+                <!--<script>-->
+                $(document).ready(function() {
+				var result = $('#jquery').parent();
+			console.log(result);
+
+		//parents()
+		result = $('#jquery').parents('.col_w900');
+		console.log(result);
+		});
+
+<!--</script>-->
+            </code>
+            
+		</div> <!-- end of col_w900 -->
+        
+        <div class="cleaner"></div>
+    </section> <!-- end of main -->
+        
+</section> <!-- end of wrapper -->
+
+<section id="t_footer_wrapper">
+	<footer id="t_footer">
+    	
+        Copyright © 2014 <a href="#">Loyola University Chicago</a> - 
+        <a href="#" target="_self">Comp 424</a> by <a href="#" target="_self">Client Side Web Development</a>
+    
+    </footer> <!-- end of footer wrapper -->
+</section> <!-- end of footer -->
+
+</body> <!--end of body-->
+</html> <!--end of html-->

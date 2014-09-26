@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-family: Helvetica, "Helvetica Neue", "Lucida Sans Unicode", "Lucida Grande", Georgia, Verdana, sans-serif;
+	font-size: 100.01%;
+	line-height: 1.7;
+	background-color: #bbb;
+	background-position: top;
+}
+
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: #ff9300;
+}
+
+a:hover {
+    color: red;
+}
+
+p { margin: 0 0 10px 0; padding: 0; }
+/*img { border: none; }*/
+em { color: #000; font-weight: bold; font-style: normal }
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal; }
+h1 { font-size: 28px; margin: 0 0 20px 0; padding: 5px 0 }
+h2 { font-size: 25px; margin: 0 0 15px 0; padding: 5px 0; }
+h3 { font-size: 22px; margin: 0 0 15px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h6 { font-size: 24px; margin: 0 0 15px; padding: 0; }
+
+.cleaner { clear: both }
+
+.float_l { float: left }
+.float_r { float: right }
+
+#t_wrapper {
+	width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
+	
+}
+
+#t_header {
+	width: 960px;
+	height: 105px;
+	background-image: url(images/landscape.jpg);
+}
+
+#t_main {
+	clear: both;
+	width: 960px;
+	padding: 30px 0;
+	background: #fff;
+}
+
+.col_w900 { width: 900px; padding: 0 30px; margin-bottom: 50px; }
+
+.post_box { clear: both; margin-bottom: 30px }
+.post_box h1 { font-size: 20px; margin-bottom: 10px }
+
+.post_box p.post_meta { margin-bottom: 0 }
+
+.post_box img { width: 550px; height: 160px; border: 5px solid #eee; margin-bottom: 10px }
+.post_box a.more { float: right; }
+
+
+
+
+
+
+#t_footer_wrapper {
+	clear: both;
+	width: 100%;
+	background: #062a44;
+	
+}
+
+#t_footer {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px 0 30px 0;
+	text-align: center;
+	color: #84b2d3;
+	font-size: 11px;
+
+}
+
+#t_footer a { color: #84b2d3; font-weight: normal; }
+
+#t_footer a:hover { color: #FFFFFF; }
+
+#myCanvas {
+	width:"200";
+	height:"100";
+	border-width:1px; 
+	 border-color: #000000;
+	 border-style: solid;
+	 }
+nav ul {
+	margin:0;
+	padding:0 1em 0 0;
+	text-align:center
+}
+
+nav li {
+	display:inline;
+	padding-left:1em
+}
+
+#newsearch {
+	float:right;
+	padding:20px;
+}
+
+aside {
+	position: static;
+    width: 200px;
+}
+figure{
+	position: relative;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure figcaption{
+	text-align: center;
+}
+
+#code {
+	 border: 2px solid green;
+	 text-align: center;
+}
+
+#HowToUse{
+	 border: 2px solid green;
+	 text-align: center;
+}
+.addclass{
+	font-color:red;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align:center;
+}
+th, td {
+    padding: 5px;
+}
+th{
+	background:#3F6;
+}
+#form{
+	white-space:nowrap;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+}
+
+.addclass{
+	color:red;
+}
+
+p.pos_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: red;
+}
+
+h2.pos_left {
+    position: relative;
+    left: -20px;
+}
+
+h6 {
+    position: absolute;
+    left: 600px;
+    
+}
